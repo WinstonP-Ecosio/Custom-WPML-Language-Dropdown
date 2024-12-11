@@ -1,4 +1,4 @@
-///funcion para mostrar un dropdown de idiomas con WPML shortcode [custom_wpml_language_dropdown]
+//Function to show a funcion dropdown of active lenguajes whit the [custom_wpml_language_dropdown] shortcode
 
 function custom_wpml_language_dropdown() {
     ob_start();
@@ -20,7 +20,7 @@ function custom_wpml_language_dropdown() {
 add_shortcode('custom_wpml_language_dropdown', 'custom_wpml_language_dropdown');
 
 
-//HORIZONTAL CUSTOM LIST
+// //Function to show a HORIZONTAL CUSTOM LIST
 function custom_horizontal_language_list() {
     $languages = apply_filters( 'wpml_active_languages', NULL, 'orderby=id&order=desc' );
 
